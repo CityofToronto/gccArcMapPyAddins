@@ -1,5 +1,5 @@
 # gccArcMapPyAddins
-Ptyhon addins to support CEdit application
+Python addins to support CEdit application
 
 1.Polaris Block Update
   The tool allow to create a source to regenerate Polaris Block boundaries. The source is cadastral parcels. The process based on dissolve geoprocessing operation and requeres attribute NAME of parcels set to include polaris block ID as 5 characters starting from left end of string
