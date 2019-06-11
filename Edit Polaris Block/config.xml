@@ -1,0 +1,20 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>Python Addin</Name><AddInID>{b6791426-d19b-440d-9acf-a027fa11e2f0}</AddInID><Description>Polaris Block boundaries update by parcels</Description> <Version>1.0</Version><Image>Images\EditorToolbarShow32.png</Image><Author>Valery K.</Author><Company>City of Toronto, GCC</Company><Date>06/10/2019</Date>
+<Targets>
+	<Target name="Desktop" version="10.1" />
+</Targets>
+<AddIn language="PYTHON" library="Edit_Blocks_addin.py" namespace="Edit_Blocks_addin"><ArcMap>
+    <Commands>
+        <Button caption="Build Block" category="Edit Polaris Block Addin" class="GpBuildBlockDialogClass" id="Edit_Blocks_addin.ed_button" image="Images\CadastralParcelBuildHistoric16.png" message="Edit Polaris Block boundary" tip="Polaris Block tool"><Help heading="" /></Button>
+        </Commands>
+    <Commands>
+        <Button caption="Update Block" category="Edit Polaris Block Addin" class="GpEditBlockFinalClass" id="Edit_Blocks_addin.up_button" image="Images\GeodatabaseWithGeoprocessingTool16.png" message="Update Polaris Block source" tip="Polaris Block tool"><Help heading="" /></Button>
+        </Commands>
+    <Toolbars>
+        <Toolbar caption="Edit Blocks Tools" category="Polaris Block Addin" id="Edit_Blocks_addin.EPB_toolbar" showInitially="true">
+			<Items>
+				<Button refID="Edit_Blocks_addin.ed_button" /><Button refID="Edit_Blocks_addin.up_button" />
+			</Items>
+		</Toolbar>
+    </Toolbars>
+    </ArcMap>
+</AddIn></ESRI.Configuration>
